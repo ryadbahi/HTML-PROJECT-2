@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body style="font-family: sans-serif;">
+    <!-- Contact form header -->
+    <h2>Faites votre reservation</h2>
+    <!-- Contact form -->
+    <form>
+        <!-- Name input field -->
+        <label for="nom">Nom : <span style="color: red;">*</span></label><br>
+        <input type="text" id="nom" name="nom" required /><br /><br />
+  
+        <!-- Email input field -->
+        <label for="email">Email :<span style="color: red;">*</span></label><br>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <!-- Phone number input field -->
+        <label for="phone">Numero de contact : </label><span style="color: red;">*</span><br>
+        <input type="tel" id="phone" name="phone" placeholder="e.g., 123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        
+        <!-- Message textarea field -->
+        <label for="message">Message :<span style="color: red;">*</span></label><br />
+        <textarea id="message" name="message" rows="8" cols="60"></textarea><br /><br />
+  
+        <!-- Submit button -->
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
